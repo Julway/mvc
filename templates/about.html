@@ -2,6 +2,17 @@
 {% block title %}About{% endblock title %}
 {%block content %}
 <h1>About me:</h1>
-<a href="/">Home</a>
-<a href="/help-me">Zur Help me</a>
+<ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/help-me">Zur Help me</a></li>
+</ol>
+<form method="POST" action="/contact">
+    <input type="text" name="contact-name" placeholder="Name eingeben">
+    <br>
+     <input type="email" name="contact-email" placeholder="Email eingeben">
+    <br>
+     <textarea  name="contact-massage" placeholder="Nachricht eingeben"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+</form>
 {%endblock content %}
